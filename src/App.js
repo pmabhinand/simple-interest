@@ -35,11 +35,11 @@ function App() {
         setIsYear(true)
        }
 
-    else{
+   /* else{
     
     setPrinciple(value)
     setIsPrinciple(false)
-    } 
+    }  */
   }
   else{
     if(name==='principle'){
@@ -84,7 +84,7 @@ const handleReset=(e)=>{
       <h1>Simple interest</h1>
       <p>calculate simple interest easily</p>
       <div className='bg-warning d-flex justify-content-center align-items-center w-100 p-3 flex-column rounded mt-4 shadow'>
-        <h1>$ {''} {interest}</h1>
+        <h1>RS {''} {interest}</h1>
         <p>total simple interest</p>
       </div>
       <form className='mt-4' onSubmit={(e)=>handleCalculate(e)}>
