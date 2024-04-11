@@ -79,13 +79,13 @@ const handleReset=(e)=>{
 }
 
   return (
-    <div style={{height:'100vh'}} className='d-flex justify-content-center align-items-center w-100 bg-dark'>
+    <div style={{height:'100vh',overflowX:'hidden'}} className='d-flex justify-content-center align-items-center w-100 bg-dark'>
       <div className='bg-light p-5 rounded'>
-      <h1>Simple interest</h1>
-      <p>calculate simple interest easily</p>
-      <div className='bg-warning d-flex justify-content-center align-items-center w-100 p-3 flex-column rounded mt-4 shadow'>
-        <h1>RS {''} {interest}</h1>
-        <p>total simple interest</p>
+      <h1 className='text-center text-danger'>Simple interest</h1>
+      <p className='text-center text-info'>calculate simple interest easily</p>
+      <div className='bg-info d-flex justify-content-center align-items-center w-100 p-3 flex-column rounded mt-4 shadow'>
+        <h1 className='text-light'>RS {''} {interest}</h1>
+        <p>Total simple interest</p>
       </div>
       <form className='mt-4' onSubmit={(e)=>handleCalculate(e)}>
         <div className='mb-3'>
